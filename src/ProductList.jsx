@@ -314,7 +314,7 @@ function ProductList({ onHomeClick }) {
                                             <button className={ classNames({
                                                 'product-button': true,
                                                 'added-to-cart': cart.find(item => item.name === plant.name)
-                                            }) } onClick={ () => handleAddToCartClick(plant) }>Add to cart</button>
+                                            }) } onClick={ () => handleAddToCartClick(plant) }>Add{cart.find(item => item.name === plant.name) ? 'ed' : ''} to cart</button>
                                         </footer>
                                     </div>)
                                 }
